@@ -50,3 +50,13 @@ function sortearAmigo() {
   let resultado = document.getElementById("resultado");
   resultado.innerHTML = `<li>${amigoSorteado} </li>`;
 }
+
+document.getElementById("titulo").addEventListener("click", reiniciarJuego);
+
+function reiniciarJuego() {
+  amigos = []; // Vacía el array
+  document.getElementById("listaAmigos").innerHTML = ""; // Limpia la lista visual
+  document.getElementById("resultado").innerText = ""; // Limpia el resultado del sorteo
+  console.clear(); // Limpia la consola
+  alert("¡Juego reiniciado! 🎉");
+}

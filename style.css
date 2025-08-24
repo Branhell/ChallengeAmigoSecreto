@@ -160,3 +160,19 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* Animación de palpitación */
+@keyframes palpitar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+#titulo {
+  animation: palpitar 3s infinite;
+  cursor: pointer; /* Para que se vea que es clickeable */
+  transition: transform 0.2s ease;
+}
